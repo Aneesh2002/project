@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+</head>
     <body class="bg-[linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('/images/loback.png')] bg-cover">
         <nav>
             <div class="flex justify-start "><img src="/images/whitelogo.png" alt="" class="size-32  "></div>
             
 
         </nav>
-        <div class="border border-white w-[1300px] h-[700px] ml-14">
+        <div class="border border-white w-[1100px] h-[500px] ml-14">
             <div class="flex">
                 <div>
                     <img src="/images/signin.png" alt="" class="mt-24 ml-12">
@@ -19,11 +20,24 @@
                 </div>
                 <div class="ml-44">
                     <h2 class="text-white mt-12 font-bold text-5xl ml-20 ">SIGN IN</h2>
-                    <input type="text" placeholder="NAME" class="w-[400px] h-[70px] border border-white bg-black mt-4 pl-4"><br>
-                    <input type="number" placeholder="PHONE" class="mt-8 w-[400px] h-[70px] border border-white bg-black pl-4"><br>
-                    <input type="text" placeholder="ADDRESS" class="w-[400px] h-[70px] border border-white bg-black mt-4 pl-4"><br>
-                    <input type="number" placeholder="" class="mt-8 w-[400px] h-[70px] border border-white bg-black pl-4"><br>
-                    <button class="text-white bg-orange-500 w-[400px] h-[50px] mt-8 ">SIGN IN</button>
+                    <div>
+                        <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First name</label>
+                        <input type="text" id="first_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="name" required />
+                    </div> 
+                    <div>
+                        <div>
+                            <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone number</label>
+                            <input type="tel" id="phone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-blue-500 block w-full p-2" placeholder="123-45-678" required />
+                        </div>
+                    </div>
+                    <div>
+                        <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Address</label>
+                        <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 " placeholder=" enter your address"></textarea>
+                    </div>                   
+                   
+
+
+                    <button class="text-white bg-orange-500 w-[400px] h-[50px] mt-8 rounded-lg ">SIGN IN</button>
     
                 </div>
             </div>
@@ -31,8 +45,7 @@
         </div>
 
 
-</head>
-<body>
+
     
 </body>
 </html>

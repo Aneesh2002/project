@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aboutus</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="bg-[linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('/images/ab.jpg')] bg-cover bg-center h-[600px]">
+        
+        
+        <nav class="flex justify-between items-center bg-white text-black font-serif py-2 px-4 md:px-8">
+            
+            <div class="flex items-center">
+                <img class="w-16 md:w-20" src="/images/logo.png" alt="Logo">
+            </div>
+
+            <!-- Menu Icon for Mobile -->
+            <div class="block md:hidden">
+                <button id="menu-toggle" class="text-3xl">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+            
+            <div id="menu" class="hidden md:flex md:items-center">
+                <ul class="flex flex-col md:flex-row md:space-x-8 space-y-4 md:space-y-0 mt-4 md:mt-0 text-lg">
+                    <li><a href="/html/offers.html" class="hover:text-orange-500"><i class="fa-solid fa-tag"></i>&nbsp;&nbsp;Offers<sup class="ml-1">NEW</sup></a></li>
+                    <li><a href="/html/search.html" class="hover:text-orange-500"><i class="fa-solid fa-magnifying-glass"></i>&nbsp;&nbsp;Search</a></li>
+                    <li><a href="#" class="hover:text-orange-500"><i class="fa-regular fa-address-book"></i>&nbsp;&nbsp;Contact</a></li>
+                    <li><a href="/html/signin.html" class="hover:text-orange-500"><i class="fa-solid fa-arrow-right-to-bracket"></i>&nbsp;&nbsp;Sign in</a></li>
+                    <li><a href="#" class="hover:text-orange-500"><i class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp;Cart</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="ml-[200px] mt-[150px] ">
+            <p class="text-6xl font-extrabold text-red-500 ml-[350px] p-4">foodio</p>
+            <p class="text-4xl font-extrabold text-orange-500 p-4">"No need to wait – your favorite meal is just a click away."</p>
+            <button class="px-4 ml-[350px] w-full md:w-[200px] h-[50px] bg-orange-500 text-white font-bold p-2 rounded-full mx-auto transition duration-300 ease-in-out transform hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-300 focus:ring-opacity-50" aria-label="Order Now">
+                Order Now
+            </button>
+            
+        </div>
+    </div>
+    <div class="">
+        <div class="p-4 border border-orange-500 bg-white shadow-xl m-12 text-center text-gray-400">
+            <p class="text-xl hover:underline hover:cursor-pointer	">About Us</p>
+        
+        <div>
+            <div><img src="/images/conimage.avif" alt="" class="size-[300px]"></div>
+        </div>
+    </div>
+        
+    </div>
+
+    <script>
+        // Toggle menu for mobile
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
