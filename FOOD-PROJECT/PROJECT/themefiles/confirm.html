@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<body>
+    <div>
+        <nav  class="flex justify-between  bg-white text-black	   font-serif py-1 shadow-lg     ">
+            <div class="flex flex-row">
+              
+              <img  class="size-20 flex justify-start mt-1 " src="/images/logo.png">
+              
+              
+            </div>
+            
+              <div class="">
+                  <ul class="flex justify-end space-x-24 mt-8 px-4  text-l ">
+                    <li><a href="/html/offers.html" class="hover:text-orange-500"><i class="fa-solid fa-tag"></i>&nbsp;&nbsp;Offers<sup>NEW</sup></a></li>
+                    <li><a href="/html//search.html" class="hover:text-orange-500"><i class="fa-solid fa-magnifying-glass"></i>&nbsp;&nbsp;Search</a></li>
+                    <li><a href="#" class="hover:text-orange-500"><i class="fa-regular fa-address-book"></i>&nbsp;&nbsp;Contact</a></li>
+                    <li><a href="/html/signin.html" class="hover:text-orange-500"><i class="fa-solid fa-arrow-right-to-bracket"></i>&nbsp;&nbsp;Sign in</a></li>
+                    <li><a href="#" class="hover:text-orange-500"><i class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp;Cart</a></li>
+                  </ul>
+              </div>
+
+                
+    
+            
+        </nav>
+    </div>
+
+    <div class="w-[600px] h-[850px] bg-white shadow-lg m-20 ml-[350px]">
+        <img src="/images/contact.jpg" alt="">
+
+        <div class="p-8">
+            <div>
+                <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900">First name</label>
+                <input type="text" id="first_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="name" required />
+            </div> 
+            <div>
+                <div>
+                    <label for="phone" class="block mb-2 text-sm font-medium text-gray-900">Phone number</label>
+                    <input type="tel" id="phone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-blue-500 block w-full p-2" placeholder="123-45-678" required />
+                </div>
+                <div>
+                    <label for="phone" class="block mb-2 text-sm font-medium text-gray-900">Price</label>
+                    <input type="tel" id="phone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-blue-500 block w-full p-2" placeholder="auto fill" required />
+                </div>
+            </div>
+            <div>
+                <label for="message" class="block mb-2 text-sm font-medium text-gray-900">location</label>
+                <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 " placeholder=" enter your address"></textarea>
+            </div> 
+            <div>
+                <a href="/user/payment.html"><button class="text-white bg-orange-500 w-full text-sm h-[50px] mt-8 rounded-lg ">next</button></a>
+
+
+            </div>
+                           
+           
+
+
+
+
+        </div>
+
+    </div>
+
+    <footer class=" shadow bg-slate-200">
+        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+            <div class="sm:flex sm:items-center sm:justify-between">
+                
+                    <img src="/images/logo.png" class="size-20" alt="" />
+                    
+                </a>
+                <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                    <li>
+                        <a href="/user/aboutus.html" class="hover:underline me-4 md:me-6">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+                    </li>
+                    <li>
+                        <a href="/user/contact.html" class="hover:underline">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+            <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.</span>
+        </div>
+    </footer>
+</body>
+</html>
